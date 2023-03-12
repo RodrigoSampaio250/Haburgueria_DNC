@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <Home dados={mock} />,
   },
   {
-    path: "/pay/:id",
+    path: "/pay/:payId",
     element: <Pay dados={mock} />,
   },
 ]);

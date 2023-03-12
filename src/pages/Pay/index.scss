@@ -1,1 +1,123 @@
 @use  '../../scss/variavel.scss' as *;
+
+.pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__produto{
+        display: flex;
+        align-items: center;
+        margin-top: 12ex;
+
+
+        &__esquera{
+            margin-right: 5ex;
+            div{
+                border: 1px solid $cor-primaria-site;
+            }
+            img{
+                width: 100%;
+            }
+            h3{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 10px;
+
+                text-align: center;
+                color: $cor-secundaria-texto;
+            }
+            p{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+
+                margin-top: 2ex;
+                text-align: center;
+                color: $cor-secundaria-texto;
+            }
+        }
+
+        &__direita{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__titulo{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 20px;
+                margin-bottom: 10px;
+                color: $cor-primaria-site;
+                text-align: center;
+            }
+
+            &__detalhes{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            h1{
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 40px;
+                line-height: 70px;
+                margin-bottom: 25px;
+                border-bottom: 2px solid $cor-primaria-site ;
+                color: $cor-secundaria-texto;
+                text-align: center;
+            }
+            &__preco{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 20px;
+                margin-bottom: 5ex;
+
+                text-align: center;
+                color: $preto;
+            }
+
+            &__continua{
+                
+                background-color: $cor-primaria-site;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 20px;
+                /* identical to box height, or 83% */
+                border: 0px;
+                text-align: center;
+                color: $cor-primaria-texto;
+                border-radius: 10px;
+                padding: 10px 42px;
+                cursor: pointer;
+            }
+            &__finalizar{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                /* identical to box height, or 83% */
+                border: 0px;
+                text-align: center;
+                color: $cor-primaria-texto;
+                background-color: $cor-secundaria-button;
+                border-radius: 10px;
+                padding: 10px 66px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
