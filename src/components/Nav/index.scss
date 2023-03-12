@@ -1,1 +1,50 @@
 @use  '../../scss/variavel.scss' as *;
+
+.nav{
+    padding: 10px 50px;
+    width: 100%;
+    background-color: $cor-primaria-site;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo{
+        width: 130px;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        column-gap: 35px;
+        flex-grow: 1;
+        padding-left: 70px;
+    }
+    li{
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+
+        cursor: pointer;
+        color: $cor-primaria-texto;
+    }
+
+    &__card-shop{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        
+    }
+
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+
+        cursor: pointer;
+        color: $cor-primaria-texto;
+    }
+}

@@ -1,1 +1,55 @@
 @use  '../../scss/variavel.scss' as *;
+
+.produto_card{
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    border: solid 1.5px $cor-primaria-site;
+
+    margin: 10px;
+    width: 235px;
+    height: 270px;
+
+    img{
+        width: 100%;
+    }
+
+    &__add{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+        margin: 10px;
+        text-align: center;
+        color:$cor-secundaria-texto;
+    }
+
+    button{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        border: 0px;
+        padding: 0.5ex 3ex;
+        border-radius: 1ex;
+        text-align: center;
+        background-color: $cor-primaria-site;
+    }
+    
+    a{
+        text-decoration: none;
+        color: $cor-primaria-texto;
+    }
+}

@@ -1,1 +1,13 @@
 @use  '../../scss/variavel.scss' as *;
+
+.home{
+    &__produto{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 40px;
+    }
+}
